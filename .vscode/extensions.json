@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "shopify.ruby-lsp",
+    "rebornix.ruby",
+    "castwide.solargraph",
+    "koichisasada.vscode-rdbg",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json",
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "esbenp.prettier-vscode"
+  ]
+}

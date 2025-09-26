@@ -1,0 +1,52 @@
+{
+  "ruby.useLanguageServer": true,
+  "ruby.intellisense": "rubyLocate",
+  "ruby.codeCompletion": "rcodetools",
+  "ruby.format": "rubocop",
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": true,
+    "completion": true,
+    "codeLens": true,
+    "definition": true,
+    "workspaceSymbol": true,
+    "signatureHelp": true,
+    "typeHierarchy": true
+  },
+  "rubyLsp.featuresConfiguration": {
+    "inlayHint": {
+      "enableAll": true
+    }
+  },
+  "files.associations": {
+    "*.rb": "ruby",
+    "*.rake": "ruby",
+    "*.gemspec": "ruby",
+    "*.ru": "ruby",
+    "Rakefile": "ruby",
+    "Gemfile": "ruby",
+    "Capfile": "ruby",
+    "Guardfile": "ruby"
+  },
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [80, 120],
+  "ruby.rubocop.executePath": "${workspaceFolder}/bin/",
+  "ruby.rubocop.configFilePath": "${workspaceFolder}/.rubocop.yml"
+}

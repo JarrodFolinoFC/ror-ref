@@ -1,0 +1,70 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Rails Server",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": ["server"],
+      "askParameters": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "Attach to Rails Server",
+      "type": "rdbg",
+      "request": "attach",
+      "rdbgPath": "rdbg",
+      "debugPort": "12345",
+      "cwd": "${workspaceFolder}",
+      "showProtocolLog": false
+    },
+    {
+      "name": "Debug Rails Console",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": ["console"],
+      "askParameters": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "development"
+      }
+    },
+    {
+      "name": "Debug Current Ruby File",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${file}",
+      "askParameters": false,
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug Rails Tests",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": ["test"],
+      "askParameters": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    },
+    {
+      "name": "Debug Specific Test File",
+      "type": "rdbg",
+      "request": "launch",
+      "script": "${workspaceFolder}/bin/rails",
+      "args": ["test", "${file}"],
+      "askParameters": false,
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "RAILS_ENV": "test"
+      }
+    }
+  ]
+}
